@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Noto+Serif:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Geologica';
+    margin: 0;
+    background-color: rgb(193, 193, 193);
+    box-shadow: #a3a2a3;
+}
+nav {
+    color: rgb(43, 43, 43);
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #a3a2a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h4{
+    color: white;
+    text-align: center;
+}
+
+.imagenes{
+    background-color: #727272;
+    margin: 1rem;
+}
+nav div {
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+}
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   height: 100vh;
+   margin-top: 2rem;
+}
+main div {
+    width: 45.83%;
+}
+div img, video {
+width: 100%;
+}
+header {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+nav h1 {
+    font-weight: 200;
+}
+header h1 {
+    font-family: 'Noto Serif';
+    font-weight: 700;
+
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: #e66f6f;
+    letter-spacing: 5px;
+}
+header p {
+    font-size: 2rem;
+}
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+header a {
+    background-color: #ff1212;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+nav span {
+    display: none;
+}
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+}
+span.icon-menu:hover {
+    cursor: pointer;
+
+}
+img:hover{
+   background-color: black;
+   padding: 2rem;
+}
+
+@media(max-width: 1024px) {
+    nav div {
+        width: 50%;
+    }
+    header, section { 
+        margin-bottom: 20px;
+        height: auto;}
+}
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+    nav span {
+        display: inline;
+    }
+    section div {
+    width: 100%;
+    margin-bottom: 2vh;
+    }
+}
